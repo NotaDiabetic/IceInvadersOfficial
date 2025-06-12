@@ -1,0 +1,905 @@
+fileFormatVersion: 2
+guid: 7a737e23ca7ffab4d999870c3bd6b796
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2340937010468523553
+    second: Asteorit_0
+  - first:
+      213: 4226705237342744597
+    second: Asteorit_1
+  - first:
+      213: -1201516507484569180
+    second: Asteorit_2
+  - first:
+      213: -7850708383109323252
+    second: Asteorit_3
+  - first:
+      213: -4907489703159659156
+    second: Asteorit_4
+  - first:
+      213: -7332944284584527926
+    second: Asteorit_5
+  - first:
+      213: 3560388299595728130
+    second: Asteorit_6
+  - first:
+      213: -2753136232576420626
+    second: Asteorit_7
+  - first:
+      213: 7375785693139872942
+    second: Asteorit_8
+  - first:
+      213: -5742754321797056486
+    second: Asteorit_9
+  - first:
+      213: -7899419800131197008
+    second: Asteorit_10
+  - first:
+      213: 4903784844380474660
+    second: Asteorit_11
+  - first:
+      213: 823355335981202765
+    second: Asteorit_12
+  - first:
+      213: 981695136279169212
+    second: Asteorit_13
+  - first:
+      213: 6512940385794455154
+    second: Asteorit_14
+  - first:
+      213: -8788412231535736247
+    second: Asteorit_15
+  - first:
+      213: -3569738796882024398
+    second: Asteorit_16
+  - first:
+      213: -2761957179292434580
+    second: Asteorit_17
+  - first:
+      213: 614154632229686114
+    second: Asteorit_18
+  - first:
+      213: -5447246250857254556
+    second: Asteorit_19
+  - first:
+      213: -4084306121404459851
+    second: Asteorit_20
+  - first:
+      213: -5882796279115381128
+    second: Asteorit_21
+  - first:
+      213: 9011107303019770499
+    second: Asteorit_22
+  - first:
+      213: -5905971436885627593
+    second: Asteorit_23
+  - first:
+      213: -4482583202279201961
+    second: Asteorit_24
+  - first:
+      213: -1058378177721952701
+    second: Asteorit_25
+  - first:
+      213: 7078213073442916088
+    second: Asteorit_26
+  - first:
+      213: 871062898433465211
+    second: Asteorit_27
+  - first:
+      213: -130960325261191795
+    second: Asteorit_28
+  - first:
+      213: -2557242838943473493
+    second: Asteorit_29
+  - first:
+      213: 6283510706022766098
+    second: Asteorit_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Asteorit_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 461
+        width: 1920
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd175791132538fd0800000000000000
+      internalID: -2340937010468523553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 455
+        width: 225
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510f812f40648aa30800000000000000
+      internalID: 4226705237342744597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 397
+        width: 172
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a14d933a1b535fe0800000000000000
+      internalID: -1201516507484569180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 357
+        width: 374
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c066695025eac0390800000000000000
+      internalID: -7850708383109323252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 452
+        width: 209
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c650840bd1815ebb0800000000000000
+      internalID: -4907489703159659156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_5
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 374
+        width: 165
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7bb9756062c3a90800000000000000
+      internalID: -7332944284584527926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_6
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 451
+        width: 177
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2054cd37b4a096130800000000000000
+      internalID: 3560388299595728130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_7
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 336
+        width: 190
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee47607ee25eac9d0800000000000000
+      internalID: -2753136232576420626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_8
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 455
+        width: 180
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaca203620e0c5660800000000000000
+      internalID: 7375785693139872942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_9
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 427
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1872f8ee53ad40b0800000000000000
+      internalID: -5742754321797056486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_10
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 418
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b72e717b8f9f5290800000000000000
+      internalID: -7899419800131197008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_11
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 432
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d0e38a55ebd0440800000000000000
+      internalID: 4903784844380474660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_12
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 376
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4df415d0552d6b00800000000000000
+      internalID: 823355335981202765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_13
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 365
+        width: 309
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb806a3768eaf9d00800000000000000
+      internalID: 981695136279169212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_14
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 284
+        width: 164
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 276f29a16cc926a50800000000000000
+      internalID: 6512940385794455154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_15
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 244
+        width: 263
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a4d9f63a9490680800000000000000
+      internalID: -8788412231535736247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_16
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 223
+        width: 130
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238aaee3a7db57ec0800000000000000
+      internalID: -3569738796882024398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_17
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 263
+        width: 17
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6f3f63349e8ba9d0800000000000000
+      internalID: -2761957179292434580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_18
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 224
+        width: 196
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b0633526ae58800800000000000000
+      internalID: 614154632229686114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_19
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 208
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4613395456e7764b0800000000000000
+      internalID: -5447246250857254556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_20
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 246
+        width: 118
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b4dbbfd831a157c0800000000000000
+      internalID: -4084306121404459851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_21
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 293
+        width: 183
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8768659d3fb1c5ea0800000000000000
+      internalID: -5882796279115381128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_22
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 349
+        width: 112
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 382fb656952ed0d70800000000000000
+      internalID: 9011107303019770499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_23
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 364
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d24d2f446c90ea0800000000000000
+      internalID: -5905971436885627593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_24
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 284
+        width: 17
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753e308c35aaac1c0800000000000000
+      internalID: -4482583202279201961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_25
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 330
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3469bd6a7a2ef41f0800000000000000
+      internalID: -1058378177721952701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_26
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 297
+        width: 30
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6471fc94dda3260800000000000000
+      internalID: 7078213073442916088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_27
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 258
+        width: 182
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b162e4713a61c00800000000000000
+      internalID: 871062898433465211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_28
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 222
+        width: 137
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d85132d274cbe2ef0800000000000000
+      internalID: -130960325261191795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_29
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 245
+        width: 227
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0ec54df29d28cd0800000000000000
+      internalID: -2557242838943473493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asteorit_30
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 232
+        width: 90
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216d9d612b3833750800000000000000
+      internalID: 6283510706022766098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
