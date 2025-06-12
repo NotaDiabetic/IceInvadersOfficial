@@ -72,6 +72,6 @@ public class IceMovement : MonoBehaviour
         }
 
         // Wende die Bewegung auf das Rigidbody an → bewegt das Objekt in der Welt
-        rb.velocity = velocity;
+        rb.linearVelocity = velocity;
     }
 }
