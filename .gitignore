@@ -73,3 +73,8 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/+++Workdata/Prefabs.meta
+Assets/+++Workdata/Scripts.meta
+Assets/+++Workdata/Sprites.meta
+Assets/+++Workdata/Scripts/PlayerControl.cs
+Assets/+++Workdata/Scripts/PlayerControl.cs.meta

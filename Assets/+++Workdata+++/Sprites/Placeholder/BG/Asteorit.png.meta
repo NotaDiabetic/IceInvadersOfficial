@@ -897,7 +897,38 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Asteorit_0: -2340937010468523553
+      Asteorit_1: 4226705237342744597
+      Asteorit_10: -7899419800131197008
+      Asteorit_11: 4903784844380474660
+      Asteorit_12: 823355335981202765
+      Asteorit_13: 981695136279169212
+      Asteorit_14: 6512940385794455154
+      Asteorit_15: -8788412231535736247
+      Asteorit_16: -3569738796882024398
+      Asteorit_17: -2761957179292434580
+      Asteorit_18: 614154632229686114
+      Asteorit_19: -5447246250857254556
+      Asteorit_2: -1201516507484569180
+      Asteorit_20: -4084306121404459851
+      Asteorit_21: -5882796279115381128
+      Asteorit_22: 9011107303019770499
+      Asteorit_23: -5905971436885627593
+      Asteorit_24: -4482583202279201961
+      Asteorit_25: -1058378177721952701
+      Asteorit_26: 7078213073442916088
+      Asteorit_27: 871062898433465211
+      Asteorit_28: -130960325261191795
+      Asteorit_29: -2557242838943473493
+      Asteorit_3: -7850708383109323252
+      Asteorit_30: 6283510706022766098
+      Asteorit_4: -4907489703159659156
+      Asteorit_5: -7332944284584527926
+      Asteorit_6: 3560388299595728130
+      Asteorit_7: -2753136232576420626
+      Asteorit_8: 7375785693139872942
+      Asteorit_9: -5742754321797056486
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
