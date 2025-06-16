@@ -155,11 +155,11 @@ MonoBehaviour:
   - {fileID: 875096701}
   - {fileID: 894129278}
   - {fileID: 2121198629}
-  spawnInterval: 10
-  maxEnemies: 6
-  simpleEnemiesPerWave: 2
-  mediumEnemiesPerWave: 2
-  hardEnemiesPerWave: 2
+  spawnInterval: 2.1
+  maxEnemies: 1
+  simpleEnemiesPerWave: 1
+  mediumEnemiesPerWave: 0
+  hardEnemiesPerWave: 0
 --- !u!4 &400742617
 Transform:
   m_ObjectHideFlags: 0
