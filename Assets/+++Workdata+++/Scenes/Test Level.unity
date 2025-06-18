@@ -148,18 +148,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1edb9486e1a017c47b3733e5cee21ccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  simpleEnemyPrefab: {fileID: 7766644547962477402, guid: c98fde5d2aae5f04e9a248cc7502c9c1, type: 3}
+  simpleEnemyPrefab: {fileID: 4448693875707553715, guid: 2902cc1143063714cbadb7ad564401c9, type: 3}
   mediumEnemyPrefab: {fileID: 4448693875707553715, guid: b869cc6791256e241ba87852bd22e49a, type: 3}
   hardEnemyPrefab: {fileID: 81548198995034802, guid: 5fa707bf88e092442bd4e09bcf18c1c5, type: 3}
   spawnPoints:
   - {fileID: 875096701}
   - {fileID: 894129278}
   - {fileID: 2121198629}
-  spawnInterval: 2.1
-  maxEnemies: 1
+  spawnInterval: 10
+  maxEnemies: 3
   simpleEnemiesPerWave: 1
-  mediumEnemiesPerWave: 0
-  hardEnemiesPerWave: 0
+  mediumEnemiesPerWave: 1
+  hardEnemiesPerWave: 1
 --- !u!4 &400742617
 Transform:
   m_ObjectHideFlags: 0
