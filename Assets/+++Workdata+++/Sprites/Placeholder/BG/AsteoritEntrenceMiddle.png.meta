@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: db8155c03400f0c47a6387dbb894f2c9
+guid: 9c236cb9d93d47a448aa9961b080279f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3779987477397337493
-    second: AsteoritEntrence.png%20a_0
+      213: 5470276250025379825
+    second: AsteoritEntrenceMiddle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AsteoritEntrence.png%20a_0
+      name: AsteoritEntrenceMiddle_0
       rect:
         serializedVersion: 2
-        x: 1367
-        y: 542
-        width: 188
-        height: 148
+        x: 7
+        y: 8
+        width: 237
+        height: 181
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b6a8e42aa69ca8bc0800000000000000
-      internalID: -3779987477397337493
+      spriteID: 1f7c40244435aeb40800000000000000
+      internalID: 5470276250025379825
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      AsteoritEntrence.png%20a_0: -3779987477397337493
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
