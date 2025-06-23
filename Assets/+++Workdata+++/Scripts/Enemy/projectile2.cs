@@ -29,15 +29,15 @@ public class Projectile : MonoBehaviour
             PlayerHealth player = other.GetComponent<PlayerHealth>();
             if (isSimpleProjectile)
             {
-                player.TakeSimpleDamage(); // Schaden zufügen
+                player.TakeSimpleDamage(); // Schaden zufï¿½gen
             }
             else if (isMediumProjectile)
             {
-                player.TakeMediumDamage(); // Schaden zufügen
+                player.TakeMediumDamage(); // Schaden zufï¿½gen
             }
             else if (isHardProjectile)
             {
-                player.TakeHardDamage(); // Schaden zufügen
+                player.TakeHardDamage(); // Schaden zufï¿½gen
             }
 
             Destroy(gameObject); // Projektil verschwindet nach Treffer
