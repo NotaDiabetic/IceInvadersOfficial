@@ -935,7 +935,7 @@ PrefabInstance:
     - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2045921171}
+      objectReference: {fileID: 2045921172}
     - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -946,7 +946,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MainMenu_Script, Assembly-CSharp
+      value: UI_Manager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -4761,6 +4761,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2045921170}
   - component: {fileID: 2045921171}
+  - component: {fileID: 2045921172}
   m_Layer: 0
   m_Name: +++ScriptManager+++
   m_TagString: Untagged
@@ -4802,6 +4803,18 @@ MonoBehaviour:
   effectVolumeSlider: {fileID: 1883696315}
   effectPercentText: {fileID: 1883696314}
   fullscreenToggle: {fileID: 1812805102}
+--- !u!114 &2045921172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045921168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67ae0d64bc380c642bf83c22c8e72a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

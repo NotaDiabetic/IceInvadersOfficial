@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+using TMPro;
 
 public class MainMenu_Script : MonoBehaviour
 {
@@ -63,12 +63,6 @@ public class MainMenu_Script : MonoBehaviour
             LoadSettingsFromPP();
         }
     }
-
-    public void LoadAScene(string MainMenu_IceInvaders)
-    {
-        SceneManager.LoadScene("Test Level");
-    }
-    
     
     //----------Player Pref's Functions---------
 

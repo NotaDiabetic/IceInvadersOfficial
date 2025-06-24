@@ -388,6 +388,34 @@ PrefabInstance:
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 0.8490566
       objectReference: {fileID: 0}
+    - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 496704097}
+    - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadPauseToMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UI_Manager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4465354238975234195, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
       propertyPath: m_Type
       value: 0
@@ -675,6 +703,7 @@ GameObject:
   m_Component:
   - component: {fileID: 496704095}
   - component: {fileID: 496704096}
+  - component: {fileID: 496704097}
   m_Layer: 0
   m_Name: +++ScriptManager+++
   m_TagString: Untagged
@@ -716,6 +745,18 @@ MonoBehaviour:
   effectVolumeSlider: {fileID: 2096764329}
   effectPercentText: {fileID: 2096764328}
   fullscreenToggle: {fileID: 1701994114}
+--- !u!114 &496704097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496704094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67ae0d64bc380c642bf83c22c8e72a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &509516706
 GameObject:
   m_ObjectHideFlags: 0
@@ -2103,6 +2144,34 @@ PrefabInstance:
     - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 0.8490566
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 496704097}
+    - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: loadPauseToGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UI_Manager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4465354238975234195, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
       propertyPath: m_Type
