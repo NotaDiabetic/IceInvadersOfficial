@@ -1,32 +1,23 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class UI_Manager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public GameObject pausePanel;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
     //---------Loading into the different Scenes
     public void LoadAScene(string MainMenu_IceInvaders)
     {
         SceneManager.LoadScene("Test Level");
-        
     }
 
-    public void LoadPauseScene(string TestLevel)
+    public void Pause()
     {
-        SceneManager.LoadScene("PauseScene");
-        SaveData();
+        pausePanel.SetActive(true);
+        PauseGame();
     }
+    
 
     public void LoadWinScene(string TestLevel)
     {
@@ -46,7 +37,7 @@ public class UI_Manager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu_IceInvaders");
     }
-    public void LoadPauseToMainMenu(string PauseScene)
+    public void LoadPauseToMainMenu(string TestLevel)
     {
         SceneManager.LoadScene("MainMenu_IceInvaders");
     }
@@ -60,21 +51,22 @@ public class UI_Manager : MonoBehaviour
     {
         SceneManager.LoadScene("Test Level");
     }
-    public void loadPauseToGame(string PauseScene)
+    public void loadPauseToGame()
     {
-        SceneManager.LoadScene("Test Level");
-        LoadData();
-    }
-    
-    //--------Saving Data for the PauseScene/LevelScene
-
-    public void SaveData()
-    {
-        //Important data needing to be saved here
+        pausePanel.SetActive(false);
+        ResumeGame();
     }
 
-    public void LoadData()
+
+    //---------Pause Game
+
+    void PauseGame()
     {
-        //Saved data the player was in before pausing the game
+        Time.timeScale = 0;
+    }
+
+    void ResumeGame()
+    {
+        Time.timeScale = 1;
     }
 }
