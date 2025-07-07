@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EarthSprite_MainMenu_0: -1144542959700521347
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

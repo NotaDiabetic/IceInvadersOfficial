@@ -460,7 +460,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EarthAtmosphere_MainMenu_0: 36819836381121934
+      EarthAtmosphere_MainMenu_1: 4702195498398959206
+      EarthAtmosphere_MainMenu_10: 4317703506772646598
+      EarthAtmosphere_MainMenu_11: -1637232300328597369
+      EarthAtmosphere_MainMenu_12: 3918290920167828699
+      EarthAtmosphere_MainMenu_2: -6669698682120140961
+      EarthAtmosphere_MainMenu_3: 6411615381251406300
+      EarthAtmosphere_MainMenu_4: -2663027630783496808
+      EarthAtmosphere_MainMenu_5: 1707707226053961941
+      EarthAtmosphere_MainMenu_6: -4943777222710725840
+      EarthAtmosphere_MainMenu_7: 6469907844395317756
+      EarthAtmosphere_MainMenu_8: 5081750986414358829
+      EarthAtmosphere_MainMenu_9: 1631597678645039138
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
