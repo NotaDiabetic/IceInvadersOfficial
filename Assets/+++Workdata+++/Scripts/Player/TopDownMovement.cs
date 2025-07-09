@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class IceMovement : MonoBehaviour
 {
     #region Ice Movment
-    
+
     // Verbindung zum Rigidbody2D (damit die Physik funktioniert)
     [SerializeField] private Rigidbody2D rb;
 
@@ -27,11 +27,32 @@ public class IceMovement : MonoBehaviour
 
     #endregion
 
-    #region Snowball mechanics
+    #region Player Health
 
-    // Bestimmt, wie viel Zeit zwischen einzelnen Angriffen mindestens vergehen muss
-    [SerializeField] public float shootingDelay = 0.5f;
-    
+    public int health = 6;
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("SimpleProjectile"))
+        {
+            health--;
+        }
+        else if (other.CompareTag("MediumProjectile"))
+        {
+            health -= 2;
+        }
+        else if (other.CompareTag("HardProjectile"))
+        {
+            health -= 3;
+        }
+    }
+
+    #endregion
+        #region Snowball mechanics
+
+        // Bestimmt, wie viel Zeit zwischen einzelnen Angriffen mindestens vergehen muss
+        [SerializeField] public float shootingDelay = 0.5f;
+
     // Legt die Bewegungsrichtung der Schneebälle fest
     public Vector3 _direction = new Vector3(0f, 0f, 0f);
 
@@ -42,7 +63,7 @@ public class IceMovement : MonoBehaviour
     public GameObject snowball_simple;
     public GameObject snowball_medium;
     public GameObject snowball_heavy;
-    
+
     // Erstellt den Transform "firepoint", damit diesem ein Objekt in der Scene zugewiesen werden kann
     public Transform firePoint;
 
@@ -158,11 +179,11 @@ public class IceMovement : MonoBehaviour
             yield return new WaitForSeconds(shootingDelay);
         }
         _canShoot = true;
-        
+
     }
 
     #endregion
-    
+
     #region Sprite rotation
 
     private float spriteY;
@@ -176,6 +197,7 @@ public class IceMovement : MonoBehaviour
 
     #endregion
 
+    #region Update Function
     // Wird einmal pro Frame aufgerufen – Eingabe lesen
     void Update()
     {
@@ -192,8 +214,8 @@ public class IceMovement : MonoBehaviour
             spriteRenderer.sprite = spriteUp;
         else if (spriteY < 0)
             spriteRenderer.sprite = spriteDown;
-            
-            lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition) - new Vector3(player.transform.position.x, player.transform.position.y);
+
+        lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition) - new Vector3(player.transform.position.x, player.transform.position.y);
         lookAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
 
         firePoint.rotation = Quaternion.Euler(0, 0, lookAngle);
@@ -253,4 +275,6 @@ public class IceMovement : MonoBehaviour
         // Wende die Bewegung auf das Rigidbody an → bewegt das Objekt in der Welt
         rb.linearVelocity = velocity;
     }
+    
+    #endregion
 }

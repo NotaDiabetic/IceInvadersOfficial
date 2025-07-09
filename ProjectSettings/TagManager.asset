@@ -8,6 +8,9 @@ TagManager:
   - MediumSnowball
   - HardSnowball
   - Snowwall
+  - MediumProjectile
+  - SimpleProjectile
+  - HardProjectile
   layers:
   - Default
   - TransparentFX
