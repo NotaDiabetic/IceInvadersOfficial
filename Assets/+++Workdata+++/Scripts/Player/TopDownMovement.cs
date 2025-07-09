@@ -1,4 +1,7 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.Tilemaps;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class IceMovement : MonoBehaviour
 {
@@ -24,35 +27,64 @@ public class IceMovement : MonoBehaviour
     
     #endregion
     
-    #region Sprite rotation
+    #region Animation
 
-    private float spriteY;
-    private float spriteX;
-    [SerializeField] private SpriteRenderer spriteRenderer;
+    public Animator animator;
 
-    [SerializeField] private Sprite spriteUp;
-    [SerializeField] private Sprite spriteDown;
-    [SerializeField] private Sprite spriteLeft;
-    [SerializeField] private Sprite spriteRight;
-    
+    private bool moving;
+    private bool isFacingRight;
+
     #endregion
-    
+
+   
     // Wird einmal pro Frame aufgerufen – Eingabe lesen
     void Update()
     {
         input.x = Input.GetAxisRaw("Horizontal"); // -1 (links), 0, 1 (rechts)
         input.y = Input.GetAxisRaw("Vertical");   // -1 (unten), 0, 1 (oben)
-        spriteX = Input.GetAxisRaw("Horizontal");
-        spriteY = Input.GetAxisRaw("Vertical");
-        
-        if (spriteX > 0)
-            spriteRenderer.sprite = spriteRight;
-        else if (spriteX < 0)
-            spriteRenderer.sprite = spriteLeft;
-        else if (spriteY > 0)
-            spriteRenderer.sprite = spriteUp;
-        else if (spriteY < 0)
-            spriteRenderer.sprite = spriteDown;
+
+        Animate();
+    }
+
+    private void Animate()
+    {
+        //magnitude is how big the input is, so if there is any input at all the moving = true or if no input the moving = false
+        //and checking if an input is positive or negative
+        if(input.magnitude > 0.1f || input.magnitude < -0.1f)
+        {
+            moving = true;
+        }
+        else
+        {
+            moving = false;
+        }
+
+        if (moving)
+        {
+            animator.SetFloat("X", input.x);
+            animator.SetFloat("Y", input.y);
+        }
+
+        animator.SetBool("Moving", moving);
+
+        //If statement schaut wo hin der character im Moment ausgerichtet ist
+        if(!isFacingRight && input.x > 0)
+        {
+            Flip();
+        }
+        else if (isFacingRight && input.x < 0)
+        {
+            Flip();
+        }
+    }
+
+    //Funktion die überprüft ob die Animation des Charakters nach links oder nach rechts ausgerichtet ist
+    public void Flip()
+    {
+        isFacingRight = !isFacingRight;
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1f;
+        transform.localScale = localScale;
     }
 
     // Wird 50x pro Sekunde aufgerufen – perfekt für Physik

@@ -458,7 +458,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &207915752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1818,6 +1818,7 @@ GameObject:
   - component: {fileID: 1155738350}
   - component: {fileID: 1155738349}
   - component: {fileID: 1155738348}
+  - component: {fileID: 1155738354}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -1918,7 +1919,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.03, y: 1.79}
+    oldSize: {x: 1.4304019, y: 2.69}
     newSize: {x: 1.03, y: 1.79}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1969,11 +1970,7 @@ MonoBehaviour:
   acceleration: 0.5
   maxSpeed: 10
   friction: -20
-  spriteRenderer: {fileID: 1155738348}
-  spriteUp: {fileID: 5723200731315524181, guid: 8db1e28fd084e164d967c4e0be6e6126, type: 3}
-  spriteDown: {fileID: 5723200731315524181, guid: 8db1e28fd084e164d967c4e0be6e6126, type: 3}
-  spriteLeft: {fileID: 5608318880423135643, guid: 5257307711d8a9a4bb5f092af066dc43, type: 3}
-  spriteRight: {fileID: 2252013715864491777, guid: 803815e41bacd0c46a5ea1af889e2c15, type: 3}
+  animator: {fileID: 1155738354}
 --- !u!4 &1155738352
 Transform:
   m_ObjectHideFlags: 0
@@ -2003,6 +2000,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 6
   currentHealth: 0
+--- !u!95 &1155738354
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155738347}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a86a85600cc0b4b4f978c741007a2aa4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1238605327
 GameObject:
   m_ObjectHideFlags: 0
