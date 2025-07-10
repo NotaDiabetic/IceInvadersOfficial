@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      winScreen_noSnow_0: -5102534992912591856
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

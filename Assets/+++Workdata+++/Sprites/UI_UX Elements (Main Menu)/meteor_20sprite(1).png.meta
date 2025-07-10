@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      meteor_20sprite(1)_0: -1527328938892802550
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

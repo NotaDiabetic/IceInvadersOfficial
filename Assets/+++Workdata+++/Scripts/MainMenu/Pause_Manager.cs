@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class Pause_Manager : MonoBehaviour
 {
     public GameObject pausePanel;
 
-    //---------Alles Speziel für das Pausen_Menu--------
+    //---------Alles Speziell fï¿½r das Pausen_Menu--------
 
     private void Start()
     {
@@ -14,11 +15,15 @@ public class Pause_Manager : MonoBehaviour
     }
 
 
-    public void Pause()
+    public void Update()
     {
-        pausePanel.SetActive(true);
-        PauseGame();
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            pausePanel.SetActive(true);
+            PauseGame();
+        }
     }
+
     
       public void LoadPauseToMainMenu(string TestLevel)
     {

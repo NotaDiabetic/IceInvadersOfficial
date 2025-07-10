@@ -410,7 +410,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Spritesheet_back_animation_0: -3778532580691142140
+      Spritesheet_back_animation_1: 2102525872537729123
+      Spritesheet_back_animation_10: 4553547134040916616
+      Spritesheet_back_animation_2: 5604488057601480095
+      Spritesheet_back_animation_3: 8945461229153101177
+      Spritesheet_back_animation_4: 7583029426374641868
+      Spritesheet_back_animation_5: 998043195665603144
+      Spritesheet_back_animation_6: -2424708832359982195
+      Spritesheet_back_animation_7: 1303207596516033542
+      Spritesheet_back_animation_8: -3570756553760475083
+      Spritesheet_back_animation_9: 4411776589968856532
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

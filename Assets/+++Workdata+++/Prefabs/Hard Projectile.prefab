@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 390457950649044786}
   - component: {fileID: 7752044846868298904}
   - component: {fileID: 591995957157117764}
+  - component: {fileID: 7451930690998103172}
   m_Layer: 0
   m_Name: Hard Projectile
-  m_TagString: Untagged
+  m_TagString: HardProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,3 +125,20 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.1
+--- !u!114 &7451930690998103172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3118493382885098151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d436d32a22a4bd541a4d6b0bc9b51666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  lifetime: 3
+  isSimpleProjectile: 0
+  isMediumProjectile: 0
+  isHardProjectile: 1

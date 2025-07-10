@@ -435,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Simple_SnowmanSpritesheet_0: -1086260875033454889
+      Simple_SnowmanSpritesheet_1: 3767117299811805158
+      Simple_SnowmanSpritesheet_10: -4502571748650040206
+      Simple_SnowmanSpritesheet_11: -2639579625276034248
+      Simple_SnowmanSpritesheet_2: -6508971027956354852
+      Simple_SnowmanSpritesheet_3: -6289184788159479408
+      Simple_SnowmanSpritesheet_4: 2248010898937196645
+      Simple_SnowmanSpritesheet_5: 7849791873493318801
+      Simple_SnowmanSpritesheet_6: -8524717663601778561
+      Simple_SnowmanSpritesheet_7: -633580362648866532
+      Simple_SnowmanSpritesheet_8: -937426074822258723
+      Simple_SnowmanSpritesheet_9: 7476315560775661720
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
