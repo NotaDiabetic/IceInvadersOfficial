@@ -4,6 +4,7 @@ public class EnemyBehavior : MonoBehaviour
 {
     public float moveSpeed = 1f;               // Wie schnell sich der Gegner bewegt
     private Transform player;                  // Referenz zum Spieler-Objekt
+    public float enemyHealth;
 
     void Start()
     {
@@ -20,8 +21,28 @@ public class EnemyBehavior : MonoBehaviour
             // Gegner in Richtung Spieler bewegen
             transform.position += direction * (moveSpeed * Time.deltaTime);
         }
+    }
 
-
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("SimpleSnowball"))
+        {
+            enemyHealth--;
+            Destroy(other.gameObject);
+        }
+        if (other.CompareTag("MediumSnowball"))
+        {
+            enemyHealth -= 2;
+            Destroy(other.gameObject);
+        }
+        if (other.CompareTag("HardSnowball"))
+        {
+            enemyHealth -= 3;
+        }
+        if (enemyHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
 }

@@ -14,7 +14,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeSimpleDamage(int simpleDamage = 1)
     {
-        
+
         currentHealth -= simpleDamage; // Schaden abziehen
 
         Debug.Log("Spieler hat Schaden genommen: " + simpleDamage + " → Aktuelle Lebenspunkte: " + currentHealth + " / " + maxHealth);
@@ -22,7 +22,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeMediumDamage(int mediumDamage = 2)
     {
-      
+
         currentHealth -= mediumDamage; // Schaden abziehen
 
         Debug.Log("Spieler hat Schaden genommen: " + mediumDamage + " → Aktuelle Lebenspunkte: " + currentHealth + " / " + maxHealth);
@@ -31,12 +31,17 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeHardDamage(int hardDamage = 3)
     {
-     
+
         currentHealth -= hardDamage; // Schaden abziehen
 
         Debug.Log("Spieler hat Schaden genommen: " + hardDamage + " → Aktuelle Lebenspunkte: " + currentHealth + " / " + maxHealth);
 
-    
+
+    }
+    public void Die()
+    {
+        Debug.Log("Spieler ist tot!");
+        
     }
    
 }

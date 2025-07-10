@@ -66,7 +66,7 @@ public class MainMenu_Script : MonoBehaviour
     
     //----------Player Pref's Functions---------
 
-    #region 
+    #region Player Prefs
     
     private void LoadDefaultSettings()
     {
@@ -101,7 +101,7 @@ public class MainMenu_Script : MonoBehaviour
     
     
     //------Settings Functions------
-    #region
+    #region Settings
     
     //Fullscreen Function
     public void ChangeFullscreenState()
@@ -167,7 +167,7 @@ public class MainMenu_Script : MonoBehaviour
 
 
     //--------Connecting Scenes-------
-    #region
+    #region Scene Connection
     public void LoadAScene(string MainMenu_IceInvaders)
     {
         SceneManager.LoadScene("Test Level");
@@ -175,7 +175,8 @@ public class MainMenu_Script : MonoBehaviour
 
     public void LoadWinScene(string TestLevel)
     {
-        SceneManager.LoadScene("WinScene");
+        SceneManager.LoadScene("MainMenu_IceInvaders");
+        
     }
 
     public void LoadLoseScene(string TestLevel)

@@ -44,14 +44,9 @@ public class Projectile : MonoBehaviour
 
             if (player.currentHealth <= 0)
             {
-                Die();
+                player.Die();
             }
 
         }
-    }
-    private void Die()
-    {
-        Debug.Log("Spieler ist tot!");
-        // TODO: Animation, Tod-Bildschirm, Restart etc.
     }
 }
