@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenu_Script : MonoBehaviour
@@ -160,6 +161,36 @@ public class MainMenu_Script : MonoBehaviour
         effectPercentText.text = ((effectVolumeFloat * 100).ToString("0") + "%");
         
         PlayerPrefs.SetFloat(effectVolume, effectVolumeFloat);
+    }
+
+    #endregion
+
+
+    //--------Connecting Scenes-------
+    #region
+    public void LoadAScene(string MainMenu_IceInvaders)
+    {
+        SceneManager.LoadScene("Test Level");
+    }
+
+    public void LoadWinScene(string TestLevel)
+    {
+        SceneManager.LoadScene("WinScene");
+    }
+
+    public void LoadLoseScene(string TestLevel)
+    {
+        SceneManager.LoadScene("LoseScene");
+    }
+
+
+    public void loadWinToGame(string WinScene)
+    {
+        SceneManager.LoadScene("Test Level");
+    }
+    public void loadloseToGame(string LoseScene)
+    {
+        SceneManager.LoadScene("Test Level");
     }
 
     #endregion

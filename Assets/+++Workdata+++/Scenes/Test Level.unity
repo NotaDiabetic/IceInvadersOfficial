@@ -399,7 +399,7 @@ PrefabInstance:
     - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1602644010}
     - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -410,7 +410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UI_Manager, Assembly-CSharp
+      value: Pause_Manager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -458,7 +458,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &207915752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2622,12 +2622,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1602644010}
     - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -2638,7 +2638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UI_Manager, Assembly-CSharp
+      value: Pause_Manager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4114026738909334718, guid: 86647307c36cad24eb75976fe92b8d9e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
