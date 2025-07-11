@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0738c7e3fe618734688574ce2045f21e
+guid: fe00f42b666a44942bbd2ca207670171
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4874245179270852825
-    second: AsteoritEntrence.png%20b_0
+      213: 534996107171700316
+    second: TeamLogo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -110,7 +110,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AsteoritEntrence.png%20b_0
+      name: TeamLogo_0
       rect:
         serializedVersion: 2
-        x: 314
-        y: 519
-        width: 226
-        height: 168
+        x: 0
+        y: 0
+        width: 1621
+        height: 621
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d0799a6a2cc4a340800000000000000
-      internalID: 4874245179270852825
+      spriteID: c5e9f2cff10bc6700800000000000000
+      internalID: 534996107171700316
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      AsteoritEntrence.png%20b_0: 4874245179270852825
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
