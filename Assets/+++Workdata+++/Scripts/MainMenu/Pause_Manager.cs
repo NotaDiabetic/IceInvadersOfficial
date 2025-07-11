@@ -31,7 +31,6 @@ public class Pause_Manager : MonoBehaviour
 
          if (spawner.spawnedEnemies >= spawner.maxEnemies && GameObject.FindGameObjectsWithTag("Snowman").Length == 0)
         {
-            Debug.Log(message: "Waga Baga Bobo");
             WinGame();
         }   
         

@@ -131,8 +131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e00840f31c440f4eacdc8e60355b131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.34
-  enemyHealth: 9
+  moveSpeed: 0.2
+  enemyHealth: 8
   MediumDrop: {fileID: 3539241357736860257, guid: da3f19d114b45c8469b16de1cfddd38e, type: 3}
   RareDrop: {fileID: 1486834138122117368, guid: ab35d64a7be49b5469ce6587d1286ef5, type: 3}
   Enemy: {fileID: 5685892727451835361}
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 3118493382885098151, guid: 40f4f66d45544a94fb09229017de9195, type: 3}
   shootPoint: {fileID: 6696196434130449155}
-  shootInterval: 1.5
+  shootInterval: 1.2
   projectileSpeed: 5
 --- !u!61 &3435564113540869320
 BoxCollider2D:
