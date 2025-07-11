@@ -10,6 +10,7 @@ public class Projectile : MonoBehaviour
     public bool isSimpleProjectile;
     public bool isMediumProjectile;
     public bool isHardProjectile;
+    
 
     public void SetDirection(Vector3 dir)
     {
@@ -45,6 +46,7 @@ public class Projectile : MonoBehaviour
             if (player.currentHealth <= 0)
             {
                 player.Die();
+                
             }
 
         }

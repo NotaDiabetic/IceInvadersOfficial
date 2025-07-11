@@ -6,12 +6,17 @@ using UnityEngine.InputSystem;
 public class Pause_Manager : MonoBehaviour
 {
     public GameObject pausePanel;
+    public GameObject winPanel;
+    public GameObject losePanel;
 
     //---------Alles Speziell f�r das Pausen_Menu--------
 
     private void Start()
     {
         pausePanel.SetActive(false);
+        winPanel.SetActive(false);
+        losePanel.SetActive(false);
+        Time.timeScale = 1;
     }
 
 
@@ -24,8 +29,8 @@ public class Pause_Manager : MonoBehaviour
         }
     }
 
-    
-      public void LoadPauseToMainMenu(string TestLevel)
+
+    public void LoadPauseToMainMenu(string TestLevel)
     {
         SceneManager.LoadScene("MainMenu_IceInvaders");
     }
@@ -47,5 +52,27 @@ public class Pause_Manager : MonoBehaviour
     void ResumeGame()
     {
         Time.timeScale = 1;
+    }
+
+    public void WinGame()
+    {
+        Time.timeScale = 0;
+        winPanel.SetActive(true);
+    }
+
+    public void LoseGame()
+    {
+        Time.timeScale = 0;
+        losePanel.SetActive(true);
+    }
+
+    public void ReloadGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void QuitToMenu(string TestLevel)
+    {
+        SceneManager.LoadScene("MainMenu_IceInvaders");
     }
 }

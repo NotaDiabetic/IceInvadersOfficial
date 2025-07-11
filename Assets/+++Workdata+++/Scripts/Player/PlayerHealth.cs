@@ -1,10 +1,13 @@
-﻿using NUnit.Framework.Internal.Execution;
+﻿using System;
+using NUnit.Framework.Internal.Execution;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 6; // 3 Herzen = 6 halbe Herzen
     public int currentHealth;
+    [SerializeField] Pause_Manager pauseManager;
+    
 
 
     void Start()
@@ -41,6 +44,7 @@ public class PlayerHealth : MonoBehaviour
     public void Die()
     {
         Debug.Log("Spieler ist tot!");
+        pauseManager.LoseGame();
         
     }
    

@@ -173,26 +173,27 @@ public class MainMenu_Script : MonoBehaviour
         SceneManager.LoadScene("Test Level");
     }
 
-    public void LoadWinScene(string TestLevel)
-    {
-        SceneManager.LoadScene("MainMenu_IceInvaders");
-        
-    }
+  //  public void LoadWinScene(string TestLevel)
+  //  {
+      //  SceneManager.LoadScene("MainMenu_IceInvaders");
+        //gotta make sure the win panel opens
+  //  }
 
-    public void LoadLoseScene(string TestLevel)
-    {
-        SceneManager.LoadScene("LoseScene");
-    }
+ //   public void LoadLoseScene(string TestLevel)
+  //  {
+  //      SceneManager.LoadScene("MainMenu_IceInvaders");
+        //gotta make sure the lose panel opens
+   // }
 
 
-    public void loadWinToGame(string WinScene)
-    {
-        SceneManager.LoadScene("Test Level");
-    }
-    public void loadloseToGame(string LoseScene)
-    {
-        SceneManager.LoadScene("Test Level");
-    }
+ //   public void loadWinToGame(string WinScene)
+   // {
+  //     SceneManager.LoadScene("Test Level");
+   // }
+   // public void loadloseToGame(string LoseScene)
+  //  {
+  //      SceneManager.LoadScene("Test Level");
+  //  }
 
     #endregion
 
