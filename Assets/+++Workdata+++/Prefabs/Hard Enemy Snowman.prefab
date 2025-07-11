@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 3118493382885098151, guid: 40f4f66d45544a94fb09229017de9195, type: 3}
   shootPoint: {fileID: 6696196434130449155}
-  shootInterval: 1
+  shootInterval: 1.5
   projectileSpeed: 5
 --- !u!61 &3435564113540869320
 BoxCollider2D:

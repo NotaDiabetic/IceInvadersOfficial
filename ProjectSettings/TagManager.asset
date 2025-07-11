@@ -16,6 +16,7 @@ TagManager:
   - PierceCollectible
   - MediumSnowman
   - HeavySnowman
+  - PracticeTarget
   layers:
   - Default
   - TransparentFX

@@ -1412,8 +1412,11 @@ MonoBehaviour:
   - {fileID: 875096701}
   - {fileID: 894129278}
   - {fileID: 2121198629}
-  spawnInterval: 10
-  maxEnemies: 12
+  spawnInterval: 15
+  maxEnemies: 16
+  spawnedEnemies: 0
+  behavior: {fileID: 4502130069944361034, guid: 2169b5ce8fcd8e142bd358a342acae31, type: 3}
+  pause: {fileID: 1602644010}
   simpleEnemiesPerWave: 2
   mediumEnemiesPerWave: 1
   hardEnemiesPerWave: 1
@@ -3051,7 +3054,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 875096700}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.5, y: 5.4, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3667,7 +3670,7 @@ Transform:
   m_GameObject: {fileID: 1066420914}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.12, y: 5.34, z: 5}
+  m_LocalPosition: {x: 0, y: 5.3, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4574,7 +4577,7 @@ MonoBehaviour:
   mediumAmmunitionCount: 0
   piercingAmmunitionCount: 0
   animator: {fileID: 1155738354}
-  playerHealth: {fileID: 0}
+  playerHealth: {fileID: 1155738353}
 --- !u!4 &1155738352
 Transform:
   m_ObjectHideFlags: 0
@@ -6339,6 +6342,7 @@ MonoBehaviour:
   pausePanel: {fileID: 1317550076}
   winPanel: {fileID: 1407789992}
   losePanel: {fileID: 1546475953}
+  spawner: {fileID: 400742616}
 --- !u!1 &1630629154
 GameObject:
   m_ObjectHideFlags: 0
@@ -6646,7 +6650,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1602644009}
+        m_TargetAssemblyTypeName: MainMenu_Script, Assembly-CSharp
+        m_MethodName: ChangeFullscreenState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &1842027895
 GameObject:
@@ -8050,9 +8066,9 @@ SceneRoots:
   - {fileID: 1155738352}
   - {fileID: 692794527}
   - {fileID: 1066420916}
-  - {fileID: 875096701}
   - {fileID: 894129278}
   - {fileID: 2121198629}
+  - {fileID: 875096701}
   - {fileID: 400742617}
   - {fileID: 53430291}
   - {fileID: 1128861210}

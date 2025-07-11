@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
@@ -8,7 +9,6 @@ public class EnemyBehavior : MonoBehaviour
     public GameObject MediumDrop;
     public GameObject RareDrop;
     public Transform Enemy;
-    [SerializeField] public EnemySpawner spawner;
 
     void Start()
     {
@@ -47,7 +47,6 @@ public class EnemyBehavior : MonoBehaviour
         {
             Destroy(gameObject);
             float randValue = Random.value;
-            spawner.currentEnemies--;
             if (randValue < .45f)
             {
                 return;

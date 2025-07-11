@@ -106,22 +106,7 @@ public class MainMenu_Script : MonoBehaviour
     //Fullscreen Function
     public void ChangeFullscreenState()
     {
-        //when user clicks the toggle in Unity
-        getFullBoolFromToggle = fullscreenToggle.isOn;
-        Debug.Log ("Changing Fullscreen state to: " + getFullBoolFromToggle);
-
-        if (getFullBoolFromToggle == true)
-        {
-            PlayerPrefs.SetInt(FullscreenInPP, 0);
-            
-            Screen.fullScreen = true;
-        }
-        else
-        {
-            PlayerPrefs.SetInt(FullscreenInPP, 1);
-            
-            Screen.fullScreen = false;
-        }
+        Screen.fullScreen = !Screen.fullScreen;
     }
     
     
@@ -170,30 +155,50 @@ public class MainMenu_Script : MonoBehaviour
     #region Scene Connection
     public void LoadAScene(string MainMenu_IceInvaders)
     {
-        SceneManager.LoadScene("Test Level");
+        SceneManager.LoadScene("Demo Level");
     }
 
-  //  public void LoadWinScene(string TestLevel)
-  //  {
-      //  SceneManager.LoadScene("MainMenu_IceInvaders");
-        //gotta make sure the win panel opens
-  //  }
+    #endregion
+    
+    #region Unused Scene Code
+    //  public void LoadWinScene(string TestLevel)
+    //  {
+    //  SceneManager.LoadScene("MainMenu_IceInvaders");
+    //gotta make sure the win panel opens
+    //  }
 
- //   public void LoadLoseScene(string TestLevel)
-  //  {
-  //      SceneManager.LoadScene("MainMenu_IceInvaders");
-        //gotta make sure the lose panel opens
-   // }
+    //   public void LoadLoseScene(string TestLevel)
+    //  {
+    //      SceneManager.LoadScene("MainMenu_IceInvaders");
+    //gotta make sure the lose panel opens
+    // }
 
 
- //   public void loadWinToGame(string WinScene)
-   // {
-  //     SceneManager.LoadScene("Test Level");
-   // }
-   // public void loadloseToGame(string LoseScene)
-  //  {
-  //      SceneManager.LoadScene("Test Level");
-  //  }
+    //   public void loadWinToGame(string WinScene)
+    // {
+    //     SceneManager.LoadScene("Test Level");
+    // }
+    // public void loadloseToGame(string LoseScene)
+    //  {
+    //      SceneManager.LoadScene("Test Level");
+    //  }
+
+    //when user clicks the toggle in Unity
+    //   getFullBoolFromToggle = fullscreenToggle.isOn;
+    //   Debug.Log ("Changing Fullscreen state to: " + getFullBoolFromToggle);
+
+    //   if (getFullBoolFromToggle == true)
+    //    {
+    //        PlayerPrefs.SetInt(FullscreenInPP, 0);
+
+    //        Screen.fullScreen = true;
+    //   }
+    //   else
+    //  {
+    //       PlayerPrefs.SetInt(FullscreenInPP, 1);
+
+    //       Screen.fullScreen = false;
+    //   }
 
     #endregion
 

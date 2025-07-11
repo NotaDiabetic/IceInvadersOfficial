@@ -8,6 +8,7 @@ public class Pause_Manager : MonoBehaviour
     public GameObject pausePanel;
     public GameObject winPanel;
     public GameObject losePanel;
+    [SerializeField] EnemySpawner spawner;
 
     //---------Alles Speziell f�r das Pausen_Menu--------
 
@@ -27,6 +28,13 @@ public class Pause_Manager : MonoBehaviour
             pausePanel.SetActive(true);
             PauseGame();
         }
+
+         if (spawner.spawnedEnemies >= spawner.maxEnemies && GameObject.FindGameObjectsWithTag("Snowman").Length == 0)
+        {
+            Debug.Log(message: "Waga Baga Bobo");
+            WinGame();
+        }   
+        
     }
 
 
