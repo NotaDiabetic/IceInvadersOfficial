@@ -11,6 +11,11 @@ TagManager:
   - SimpleProjectile
   - MediumProjectile
   - HardProjectile
+  - Snowman
+  - MediumCollectible
+  - PierceCollectible
+  - MediumSnowman
+  - HeavySnowman
   layers:
   - Default
   - TransparentFX

@@ -12,7 +12,8 @@ public class EnemySpawner : MonoBehaviour
 
     [Header("Spawn-Limit")]
     public int maxEnemies = 3;                 // Maximale Anzahl gleichzeitig existierender Gegner
-    private int currentEnemies = 0;        // Aktuelle Anzahl der gespawnten Gegner
+    public int currentEnemies = 0;        // Aktuelle Anzahl der gespawnten Gegner
+    public int spawnedEnemies = 0;
 
     [Header("Wellen-Einstellungen")]
     public int simpleEnemiesPerWave = 0;
@@ -29,55 +30,60 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnWaveEnemy()
     {
-        SpawnSimpleEnemies(simpleEnemiesPerWave);
-        SpawnMediumEnemies(mediumEnemiesPerWave);
-        SpawnHardEnemies(hardEnemiesPerWave);
+        StartCoroutine(SpawnSimpleEnemies(simpleEnemiesPerWave));
+        StartCoroutine(SpawnMediumEnemies(mediumEnemiesPerWave));
+        StartCoroutine(SpawnHardEnemies(hardEnemiesPerWave));
     }
 
     // Hilfsmethode zum Spawnen einer bestimmten Anzahl eines Gegnertyps
-    void SpawnSimpleEnemies(int count)
+    public IEnumerator SpawnSimpleEnemies(int count)
     {
-
+        yield return new WaitForSeconds(0);
         for (int i = 0; i < count; i++)
         {
-            if (currentEnemies >= maxEnemies || spawnPoints.Length == 0)
-                return;
+            if (currentEnemies < maxEnemies || spawnPoints.Length != 0)
+            {
+                int randomIndex = Random.Range(0, spawnPoints.Length);
+                Transform spawnLocation = spawnPoints[randomIndex];
 
-            int randomIndex = Random.Range(0, spawnPoints.Length);
-            Transform spawnLocation = spawnPoints[randomIndex];
-
-            Instantiate(simpleEnemyPrefab, spawnLocation.position, Quaternion.identity);
-            currentEnemies++;
+                Instantiate(simpleEnemyPrefab, spawnLocation.position, Quaternion.identity);
+                currentEnemies++;
+                spawnedEnemies++;
+            }
             
         }
     }
 
-    void SpawnMediumEnemies(int count)
+    public IEnumerator SpawnMediumEnemies(int count)
     {
+        yield return new WaitForSeconds(2);
         for (int i = 0; i < count; i++)
         {
-            if (currentEnemies >= maxEnemies || spawnPoints.Length == 0)
-                return;
+            if (currentEnemies < maxEnemies || spawnPoints.Length != 0)
+            {
+                int randomIndex = Random.Range(0, spawnPoints.Length);
+                Transform spawnLocation = spawnPoints[randomIndex];
 
-            int randomIndex = Random.Range(0, spawnPoints.Length);
-            Transform spawnLocation = spawnPoints[randomIndex];
-
-            Instantiate(mediumEnemyPrefab, spawnLocation.position, Quaternion.identity);
-            currentEnemies++;
+                Instantiate(mediumEnemyPrefab, spawnLocation.position, Quaternion.identity);
+                currentEnemies++;
+                spawnedEnemies++;
+            }
         }
     }
-     void SpawnHardEnemies(int count)
+    public IEnumerator SpawnHardEnemies(int count)
     {
+        yield return new WaitForSeconds(4);
         for (int i = 0; i < count; i++)
         {
-            if (currentEnemies >= maxEnemies || spawnPoints.Length == 0)
-                return;
+            if (currentEnemies > maxEnemies || spawnPoints.Length != 0)
+            {
+                int randomIndex = Random.Range(0, spawnPoints.Length);
+                Transform spawnLocation = spawnPoints[randomIndex];
 
-            int randomIndex = Random.Range(0, spawnPoints.Length);
-            Transform spawnLocation = spawnPoints[randomIndex];
-
-            Instantiate(hardEnemyPrefab, spawnLocation.position, Quaternion.identity);
-            currentEnemies++;
+                Instantiate(hardEnemyPrefab, spawnLocation.position, Quaternion.identity);
+                currentEnemies++;
+                spawnedEnemies++;
+            }
         }
     }
 }

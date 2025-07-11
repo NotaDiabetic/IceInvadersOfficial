@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 using UnityEngine.Tilemaps;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
@@ -62,30 +65,43 @@ public class IceMovement : MonoBehaviour
 
     // Legt fest, ob der Spieler normal angreift oder mit der Maus zielen kann
     public bool _easyMode = false;
+    public int mediumAmmunitionCount;
+    public int piercingAmmunitionCount;
 
+    void Start()
+    {
+        mediumAmmunitionCount = 0;
+        piercingAmmunitionCount = 0;
+    }
     private IEnumerator ShootMouse()
     {
-        Debug.Log(message: "Snowball thrown");
         _canShoot = false;
         snowballSpeed = 10;
         if (sbc.ProjectileType == 0)
         {
+            Debug.Log(message: "Snowball thrown");
             GameObject SB_simple = Instantiate(snowball_simple);
             SB_simple.transform.position = firePoint.position;
             SB_simple.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
             SB_simple.GetComponent<Rigidbody2D>().linearVelocity = firePoint.right * snowballSpeed;
             yield return new WaitForSeconds(shootingDelay);
         }
-        else if (sbc.ProjectileType == 1)
+        else if (sbc.ProjectileType == 1 && mediumAmmunitionCount > 0)
         {
+            Debug.Log(message: "Snowball thrown");
+            mediumAmmunitionCount--;
+            sbc.UpdateMediumAmmoCount(mediumAmmunitionCount);
             GameObject SB_medium = Instantiate(snowball_medium);
             SB_medium.transform.position = firePoint.position;
             SB_medium.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
             SB_medium.GetComponent<Rigidbody2D>().linearVelocity = firePoint.right * snowballSpeed;
             yield return new WaitForSeconds(shootingDelay);
         }
-        else if (sbc.ProjectileType == 2)
+        else if (sbc.ProjectileType == 2 && piercingAmmunitionCount > 0)
         {
+            Debug.Log(message: "Snowball thrown");
+            piercingAmmunitionCount--;
+            sbc.UpdateHeavyAmmoCount(piercingAmmunitionCount);
             GameObject SB_heavy = Instantiate(snowball_heavy);
             SB_heavy.transform.position = firePoint.position;
             SB_heavy.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
@@ -97,10 +113,10 @@ public class IceMovement : MonoBehaviour
     }
     private IEnumerator ShootSpace()
     {
-        Debug.Log(message: "Snowball thrown");
         _canShoot = false;
         if (sbc.ProjectileType == 0)
         {
+            Debug.Log(message: "Snowball thrown");
             GameObject SB_simple = Instantiate(snowball_simple);
             SB_simple.transform.position = firePoint.position;
             SB_simple.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
@@ -119,8 +135,11 @@ public class IceMovement : MonoBehaviour
             SB_simple.GetComponent<Rigidbody2D>().linearVelocity = _direction * snowballSpeed;
             yield return new WaitForSeconds(shootingDelay);
         }
-        else if (sbc.ProjectileType == 1)
+        else if (sbc.ProjectileType == 1 && mediumAmmunitionCount > 0)
         {
+            Debug.Log(message: "Snowball thrown");
+            mediumAmmunitionCount--;
+            sbc.UpdateMediumAmmoCount(mediumAmmunitionCount);
             GameObject SB_medium = Instantiate(snowball_medium);
             SB_medium.transform.position = firePoint.position;
             SB_medium.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
@@ -139,8 +158,11 @@ public class IceMovement : MonoBehaviour
             SB_medium.GetComponent<Rigidbody2D>().linearVelocity = _direction * snowballSpeed;
             yield return new WaitForSeconds(shootingDelay);
         }
-        else if (sbc.ProjectileType == 2)
+        else if (sbc.ProjectileType == 2 && piercingAmmunitionCount > 0)
         {
+            Debug.Log(message: "Snowball thrown");
+            piercingAmmunitionCount--;
+            sbc.UpdateHeavyAmmoCount(piercingAmmunitionCount);
             GameObject SB_heavy = Instantiate(snowball_heavy);
             SB_heavy.transform.position = firePoint.position;
             SB_heavy.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
@@ -161,6 +183,11 @@ public class IceMovement : MonoBehaviour
         }
         _canShoot = true;
 
+    }
+
+    public void SwitchEasyMode()
+    {
+        _easyMode = !_easyMode;
     }
 
     #endregion
@@ -254,7 +281,6 @@ public class IceMovement : MonoBehaviour
             {
                 sbc.ProjectileType = 2;
             }
-            sbc.UpdateProjectileType(sbc.ProjectileType);
         }
         if (Keyboard.current.eKey.wasPressedThisFrame)
         {
@@ -263,29 +289,52 @@ public class IceMovement : MonoBehaviour
             {
                 sbc.ProjectileType = 0;
             }
-            sbc.UpdateProjectileType(sbc.ProjectileType);
         }
     }
 
-        // Wird 50x pro Sekunde aufgerufen – perfekt für Physik
-        void FixedUpdate()
+    // Wird 50x pro Sekunde aufgerufen – perfekt für Physik
+    void FixedUpdate()
+    {
+        // Die Zielgeschwindigkeit in Richtung der Eingabe
+        Vector2 targetVelocity = input.normalized * maxSpeed;
+
+        // Gleiche die aktuelle Geschwindigkeit mit der Zielgeschwindigkeit an:
+        // → `Lerp` bewegt sich weich von A (current) zu B (target) in acceleration (Stücke)
+        velocity = Vector2.Lerp(velocity, targetVelocity, acceleration * Time.fixedDeltaTime);
+
+        // Wenn keine Tasten gedrückt werden -> bremse langsam ab (wie auf Eis)
+        if (input == Vector2.zero)
         {
-            // Die Zielgeschwindigkeit in Richtung der Eingabe
-            Vector2 targetVelocity = input.normalized * maxSpeed;
-
-            // Gleiche die aktuelle Geschwindigkeit mit der Zielgeschwindigkeit an:
-            // → `Lerp` bewegt sich weich von A (current) zu B (target) in acceleration (Stücke)
-            velocity = Vector2.Lerp(velocity, targetVelocity, acceleration * Time.fixedDeltaTime);
-
-            // Wenn keine Tasten gedrückt werden -> bremse langsam ab (wie auf Eis)
-            if (input == Vector2.zero)
-            {
-                velocity = Vector2.Lerp(velocity, Vector2.zero, friction * Time.fixedDeltaTime);
-            }
-
-            // Wende die Bewegung auf das Rigidbody an → bewegt das Objekt in der Welt
-            rb.linearVelocity = velocity;
+            velocity = Vector2.Lerp(velocity, Vector2.zero, friction * Time.fixedDeltaTime);
         }
 
-        #endregion
+        // Wende die Bewegung auf das Rigidbody an → bewegt das Objekt in der Welt
+        rb.linearVelocity = velocity;
+    }
+
+    #endregion
+
+    #region Collision
+    [SerializeField] public PlayerHealth playerHealth;
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("MediumCollectible"))
+        {
+            mediumAmmunitionCount += 5;
+            sbc.UpdateMediumAmmoCount(mediumAmmunitionCount);
+            Destroy(other.gameObject);
+        }
+        if (other.CompareTag("PierceCollectible"))
+        {
+            piercingAmmunitionCount += 5;
+            sbc.UpdateHeavyAmmoCount(piercingAmmunitionCount);
+            Destroy(other.gameObject);
+        }
+        if (other.CompareTag("Snowman"))
+        {
+            playerHealth.currentHealth = 0;
+        }
+    }
+
+    #endregion
 }

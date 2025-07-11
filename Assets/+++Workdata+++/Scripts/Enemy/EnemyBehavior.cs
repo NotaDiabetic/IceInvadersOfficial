@@ -5,6 +5,10 @@ public class EnemyBehavior : MonoBehaviour
     public float moveSpeed = 1f;               // Wie schnell sich der Gegner bewegt
     private Transform player;                  // Referenz zum Spieler-Objekt
     public float enemyHealth;
+    public GameObject MediumDrop;
+    public GameObject RareDrop;
+    public Transform Enemy;
+    [SerializeField] public EnemySpawner spawner;
 
     void Start()
     {
@@ -42,6 +46,22 @@ public class EnemyBehavior : MonoBehaviour
         if (enemyHealth <= 0)
         {
             Destroy(gameObject);
+            float randValue = Random.value;
+            spawner.currentEnemies--;
+            if (randValue < .45f)
+            {
+                return;
+            }
+            else if (randValue < .9f)
+            {
+                GameObject MD = Instantiate(MediumDrop);
+                MD.transform.position = Enemy.position;
+            }
+            else
+            {
+                GameObject RD = Instantiate(RareDrop);
+                RD.transform.position = Enemy.position;
+            }
         }
     }
 

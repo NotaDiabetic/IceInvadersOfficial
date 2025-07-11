@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2944082706608590325}
   m_Layer: 0
   m_Name: Medium Enemy Snowman 1
-  m_TagString: Untagged
+  m_TagString: Snowman
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,6 +134,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0.34
   enemyHealth: 3
+  MediumDrop: {fileID: 3539241357736860257, guid: da3f19d114b45c8469b16de1cfddd38e, type: 3}
+  RareDrop: {fileID: 1486834138122117368, guid: ab35d64a7be49b5469ce6587d1286ef5, type: 3}
+  Enemy: {fileID: 3577949802366927726}
 --- !u!114 &4709734368230133865
 MonoBehaviour:
   m_ObjectHideFlags: 0

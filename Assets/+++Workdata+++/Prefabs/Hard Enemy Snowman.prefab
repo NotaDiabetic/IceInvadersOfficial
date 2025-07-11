@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3435564113540869320}
   m_Layer: 0
   m_Name: Hard Enemy Snowman
-  m_TagString: Untagged
+  m_TagString: Snowman
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,8 +81,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2190272491486867981, guid: aab1c5a0b5d4b4c4b9d1763d51626186, type: 3}
-  m_Color: {r: 0.7660377, g: 0.1777785, b: 0.18607327, a: 1}
+  m_Sprite: {fileID: -4515136033776228239, guid: 86368692b856bf244825bda96cd1e96e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -133,7 +133,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0.34
   enemyHealth: 9
-  spawner: {fileID: 0}
+  MediumDrop: {fileID: 3539241357736860257, guid: da3f19d114b45c8469b16de1cfddd38e, type: 3}
+  RareDrop: {fileID: 1486834138122117368, guid: ab35d64a7be49b5469ce6587d1286ef5, type: 3}
+  Enemy: {fileID: 5685892727451835361}
 --- !u!114 &4862145220437089630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,7 +190,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.96, y: 1.64}
+    oldSize: {x: 2.98, y: 2.47}
     newSize: {x: 1.96, y: 1.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

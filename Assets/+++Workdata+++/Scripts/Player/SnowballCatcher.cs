@@ -4,12 +4,17 @@ using UnityEngine;
 public class SnowballCatcher : MonoBehaviour
 {
     [SerializeField] public int ProjectileType = 0;
-    [SerializeField] public TextMeshProUGUI TypeTracker;
+    [SerializeField] public TextMeshProUGUI MediumTracker;
+    [SerializeField] public TextMeshProUGUI HeavyTracker;
 
 
-    public void UpdateProjectileType(int newType)
+    public void UpdateMediumAmmoCount(int newType)
     {
-        TypeTracker.text = newType.ToString();
+        MediumTracker.text = newType.ToString();
+    }
+    public void UpdateHeavyAmmoCount(int newType)
+    {
+        HeavyTracker.text = newType.ToString();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
